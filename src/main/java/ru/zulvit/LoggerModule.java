@@ -1,19 +1,13 @@
 package ru.zulvit;
 
 import com.google.inject.AbstractModule;
+import org.jetbrains.annotations.NotNull;
 import ru.zulvit.logservice.CompositeLogService;
 import ru.zulvit.logservice.ConsoleLogService;
 import ru.zulvit.logservice.FileLogService;
 import ru.zulvit.logservice.LoggerService;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 class LoggerModule extends AbstractModule {
-    @NotNull
-    private final Logger logger = Logger.getLogger(LoggerModule.class.getName());
-
     @NotNull
     private final String[] args;
     public final int TYPE_OF_LOGGER_PARAM_INDEX = 0;
@@ -26,6 +20,10 @@ class LoggerModule extends AbstractModule {
     @Override
     protected void configure() {
         try {
+            if (args.length != 2) {
+                throw new Exception("You must pass 2 arguments");
+            }
+
             if (args[TYPE_OF_LOGGER_PARAM_INDEX].equalsIgnoreCase("composite")) {
                 bind(LoggerService.class).toInstance(new CompositeLogService(args[TAG_PARAM_INDEX]));
             } else if (args[TYPE_OF_LOGGER_PARAM_INDEX].equalsIgnoreCase("console")) {
@@ -33,12 +31,13 @@ class LoggerModule extends AbstractModule {
             } else if (args[TYPE_OF_LOGGER_PARAM_INDEX].equalsIgnoreCase("file")) {
                 bind(LoggerService.class).toInstance(new FileLogService(args[TAG_PARAM_INDEX]));
             } else {
-                logger.log(Level.WARNING, """
+                throw new Exception("""
                         Pass parameters at startup in the format: [logging_type] [tag]
-                        Possible types of logging: CONSOLE, FILE, COMPOSITE""", new Throwable("Incorrect launch options"));
+                        Possible types of logging: CONSOLE, FILE, COMPOSITE
+                        """);
             }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            logger.log(Level.WARNING, "You didn't enter parameters when starting the application", new ArrayIndexOutOfBoundsException());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }

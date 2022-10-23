@@ -2,5 +2,5 @@ package ru.zulvit.logservice;
 
 @FunctionalInterface
 public interface LoggerService {
-    void waitForInput();
+    void log(String msg);
 }

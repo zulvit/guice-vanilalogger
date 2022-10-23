@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b414a4-ed84-4201-82d7-a8147114f86d" name="Changes" comment="0.0.0&#10;- logger and guice DI">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/CustomFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/LoggerModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/CompositeLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/ConsoleLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/FileLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/LoggerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/LoggerModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/LoggerModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/CompositeLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/CompositeLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/ConsoleLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/ConsoleLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/FileLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/FileLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/LoggerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/LoggerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -46,20 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/savva/IdeaProjects/guice-vanilalogger/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/savva/IdeaProjects/guice-vanilalogger/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\savva\IdeaProjects\guice-vanilalogger\src\main\resources" />
@@ -69,14 +73,14 @@
       <recent name="ru.zulvit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.zulvit.Main">
-    <configuration name="ru.zulvit.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.zulvit.Main" />
       <module name="guice-vanilalogger.main" />
       <option name="PROGRAM_PARAMETERS" value="composite a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.zulvit.*" />
+          <option name="PATTERN" value="ru.zulvit.LoggerModule" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +108,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ru.zulvit.Main" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.guice-vanilalogger" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ru.zulvit.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -122,8 +126,18 @@
       <option name="presentableId" value="Default" />
       <updated>1666288075371</updated>
       <workItem from="1666288077265" duration="679000" />
-      <workItem from="1666288776558" duration="334000" />
+      <workItem from="1666288776558" duration="3076000" />
+      <workItem from="1666520065348" duration="3868000" />
+      <workItem from="1666544615098" duration="4754000" />
     </task>
+    <task id="LOCAL-00001" summary="0.0.0&#10;- logger and guice DI">
+      <created>1666289408161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666289408161</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
