@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b414a4-ed84-4201-82d7-a8147114f86d" name="Changes" comment="" />
+    <list default="true" id="53b414a4-ed84-4201-82d7-a8147114f86d" name="Changes" comment="0.0.0&#10;- logger and guice DI">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/LoggerModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/LoggerModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/CompositeLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/CompositeLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/ConsoleLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/ConsoleLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/FileLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/FileLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/LoggerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zulvit/logservice/LoggerService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +26,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GPR8csOOzbX0gs1GXk7lAvzQmL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,9 +52,71 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/savva/IdeaProjects/guice-vanilalogger/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\savva\IdeaProjects\guice-vanilalogger\src\main\resources" />
+      <recent name="C:\Users\savva\IdeaProjects\guice-vanilalogger\src\main\java\ru\zulvit\logservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.zulvit" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.zulvit.Main" />
+      <module name="guice-vanilalogger.main" />
+      <option name="PROGRAM_PARAMETERS" value="composite a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.zulvit.LoggerModule" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="guice-vanilalogger" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.guice-vanilalogger" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,7 +125,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666288075371</updated>
+      <workItem from="1666288077265" duration="679000" />
+      <workItem from="1666288776558" duration="3076000" />
+      <workItem from="1666520065348" duration="3868000" />
+      <workItem from="1666544615098" duration="4754000" />
     </task>
+    <task id="LOCAL-00001" summary="0.0.0&#10;- logger and guice DI">
+      <created>1666289408161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666289408161</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.0.0&#10;- logger and guice DI" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.0&#10;- logger and guice DI" />
   </component>
 </project>
